@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISAbcOrder",
+  "modelName": "i-i-s-abc-order",
+  "className": "Order",
+  "nameSpace": "IIS.Abc",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "status",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "client",
+      "relatedTo": "i-i-s-abc-client",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "coupon",
+      "relatedTo": "i-i-s-abc-coupon",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "orderProduct",
+      "relatedTo": "i-i-s-abc-order-product",
+      "inverse": "order"
+    }
+  ],
+  "projections": [
+    {
+      "name": "OrderE",
+      "modelName": "i-i-s-abc-order",
+      "attrs": [
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Password",
+          "lookupValueField": "password",
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "password",
+              "caption": "Password",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Client",
+          "name": "client",
+          "relatedTo": "i-i-s-abc-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ProductName",
+          "lookupValueField": "productName",
+          "relationName": "Coupon",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "productName",
+              "caption": "Product name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Coupon",
+          "name": "coupon",
+          "relatedTo": "i-i-s-abc-coupon",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "OrderProductE",
+          "caption": "Order product",
+          "name": "orderProduct",
+          "relatedTo": "i-i-s-abc-order-product",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "OrderL",
+      "modelName": "i-i-s-abc-order",
+      "attrs": [
+        {
+          "name": "status",
+          "caption": "Status",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Client",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "password",
+              "caption": "Password",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Password",
+          "name": "client",
+          "relatedTo": "i-i-s-abc-client",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Coupon",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "productName",
+              "caption": "Product name",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Product name",
+          "name": "coupon",
+          "relatedTo": "i-i-s-abc-coupon",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

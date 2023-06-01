@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-abc-coupon-e",
+  "editForm": "i-i-s-abc-coupon-e",
+  "external": false,
+  "caption": "Coupon",
+  "name": "IISAbcCouponL",
+  "className": "CouponL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-abc-coupon",
+      "modelProjection": "CouponL"
+    }
+  ]
+}

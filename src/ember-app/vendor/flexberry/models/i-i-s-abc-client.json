@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISAbcClient",
+  "modelName": "i-i-s-abc-client",
+  "className": "Client",
+  "nameSpace": "IIS.Abc",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "login",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ClientE",
+      "modelName": "i-i-s-abc-client",
+      "attrs": [
+        {
+          "name": "password",
+          "caption": "Password",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "login",
+          "caption": "Login",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ClientL",
+      "modelName": "i-i-s-abc-client",
+      "attrs": [
+        {
+          "name": "password",
+          "caption": "Password",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "login",
+          "caption": "Login",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-abc-product-e",
+  "editForm": "i-i-s-abc-product-e",
+  "external": false,
+  "caption": "Product",
+  "name": "IISAbcProductL",
+  "className": "ProductL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-abc-product",
+      "modelProjection": "ProductL"
+    }
+  ]
+}

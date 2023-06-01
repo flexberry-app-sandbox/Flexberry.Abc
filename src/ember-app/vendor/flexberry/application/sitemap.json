@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Abc",
+  "applicationTitle": "Abc",
+  "items": [
+    {
+      "link": null,
+      "menuName": "abc",
+      "caption": "Abc",
+      "title": "Abc",
+      "children": [
+        {
+          "link": "i-i-s-abc-order-l",
+          "menuName": null,
+          "caption": "Order",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-abc-product-l",
+          "menuName": null,
+          "caption": "Product",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-abc-client-l",
+          "menuName": null,
+          "caption": "Client",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-abc-coupon-l",
+          "menuName": null,
+          "caption": "Coupon",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

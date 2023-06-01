@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Coupon",
+  "name": "IISAbcCouponE",
+  "className": "CouponE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-abc-coupon",
+      "modelProjection": "CouponE"
+    }
+  ]
+}

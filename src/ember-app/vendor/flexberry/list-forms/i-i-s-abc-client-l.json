@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-abc-client-e",
+  "editForm": "i-i-s-abc-client-e",
+  "external": false,
+  "caption": "Client",
+  "name": "IISAbcClientL",
+  "className": "ClientL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-abc-client",
+      "modelProjection": "ClientL"
+    }
+  ]
+}

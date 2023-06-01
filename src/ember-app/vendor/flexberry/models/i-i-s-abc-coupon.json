@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISAbcCoupon",
+  "modelName": "i-i-s-abc-coupon",
+  "className": "Coupon",
+  "nameSpace": "IIS.Abc",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "percent",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "productName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "CouponE",
+      "modelName": "i-i-s-abc-coupon",
+      "attrs": [
+        {
+          "name": "percent",
+          "caption": "Percent",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "productName",
+          "caption": "Product name",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "CouponL",
+      "modelName": "i-i-s-abc-coupon",
+      "attrs": [
+        {
+          "name": "percent",
+          "caption": "Percent",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "productName",
+          "caption": "Product name",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

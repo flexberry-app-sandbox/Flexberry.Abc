@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Client",
+  "name": "IISAbcClientE",
+  "className": "ClientE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-abc-client",
+      "modelProjection": "ClientE"
+    }
+  ]
+}
